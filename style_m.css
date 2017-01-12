@@ -406,7 +406,7 @@ h3:hover {
 	margin: auto;
 	clear: left;
 	max-width: 100%;
-	max-height: 250px;
+	max-height: 180px;
 	margin-top: 50px;
 }
 .right400 {
@@ -430,7 +430,7 @@ h3:hover {
 	margin: auto;	
 	clear: right;
 	max-width: 100%;
-	max-height: 250px;
+	max-height: 180px;
 	margin-top: 50px;
 }
 .inside_word {
