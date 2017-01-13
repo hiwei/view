@@ -35,17 +35,10 @@ body {
 }
 .view span:after {
 	display: none;
-	content: '';
-	border-bottom: 1.6rem solid #84C88A;
-	margin-left: 0%;
-	width:10%;
-	transition: width 0.5s, margin 0.5s;
-	padding-bottom: 2rem;
 }
 .view span:hover:after {
 	display: none;
-	margin-left: 75%;
-	width:18%;
+
 }
 
 /* HOME */
@@ -163,8 +156,6 @@ body {
 	margin-top:-7px;
 	margin-left:0px;
 }
-
-
 ul {
 	list-style-type : none;
 }
@@ -183,7 +174,6 @@ h3:hover {
 }
 .circle_left {
 	display: none;
-
 }
 .circle_right {
 	display: none;
@@ -220,35 +210,12 @@ h3:hover {
 }
 .this {
 	display: none;
-	align-items: center;
-	justify-content: center;
-	width: 100%; 
-	height: 100vh; 
-	position:absolute;
-	left:0%;
-	top:310%;
 }
 .triangle {
 	display: none;
-	border-left: 15vw solid transparent;
-	border-right: 15vw solid transparent;
-	border-bottom: 28vw solid #84c88a;
-	float:left;
-	margin-left:vw;
-	margin-top:0vw;
-	background:none;
-	font-family:khula;
-	font-size: 10vw;
-	transition: border 0.5s;
 }
 .triangle div{
 	display: none;
-	cursor: context-menu;
-	position: absolute;
-	top:22%;
-	right: 28%;
-	color: transparent;
-	transition: color 0.5s;
 }
 .triangle:hover.triangle div{
 	display: none;
@@ -256,14 +223,6 @@ h3:hover {
 }
 .circle{
 	display: none;
-	width:15vw;
-	height:15vw;
-	border:2px solid #84c88a;
-	border-radius:100%;
-	float:right;
-	margin-right:5vw;
-	margin-top:13vw;
-	padding-right: 5vw;
 }
 .question {
 	position:absolute;
@@ -273,7 +232,7 @@ h3:hover {
 	top:130%;
 	color: #fff;
 	font-family: Montserrat;
-	font-size: 30vw;
+	font-size: 30vh;
 }
 .question div{
 	cursor: context-menu;
@@ -287,7 +246,7 @@ h3:hover {
 	position:absolute;
 	width:100%;
 	height:100vh;
-	top:230%;
+	top:235%;
 }
 .line div{
 	height:100vh;
@@ -347,25 +306,14 @@ h3:hover {
 }
 .explore div span:after {
 	display: none;
-	content: '';
-	margin-left:50%;
-	margin-top:0px;
-	width:0%;
-	border-bottom: 0.5vw solid #fA918C;
-	transition: width .5s ease-in-out, margin .5s ease-in-out;
 }
 .explore div span:hover:after {
 	display: none;
-	margin-left:1%;
-	width:98%;
 }
 .explore div span:hover{
 	cursor: pointer;
 	color:#fA918C;
 }
-
-
-/* 分頁 */
 
 /* tab contents */
 .tab_content {
