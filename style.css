@@ -35,8 +35,9 @@ body {
 	border-bottom: 1.6rem solid #84C88A;
 	margin-left: 0%;
 	width:10%;
-	transition: width 0.5s, margin 0.5s;
 	padding-bottom: 2rem;
+	-webkit-transition: width 0.5s, margin 0.5s;
+	transition: width 0.5s, margin 0.5s;
 }
 .view span:hover:after {
 	margin-left: 75%;
@@ -55,6 +56,7 @@ body {
 	right:8%;
 	top:13%;
 	background:none;
+	-webkit-transition: border 0.5s;
 	transition: border 0.5s;
 }
 .to_home:hover {
@@ -92,8 +94,9 @@ body {
 	font-size: 5vw;
 	letter-spacing: 1rem;
 	font-family:Khula;
-    transition: margin .7s;
 	padding-top: 5vh;
+    -webkit-transition: margin .7s;
+    transition: margin .7s;
 }
 .nav_text.clicked {
 	margin-left:0%;
@@ -105,7 +108,9 @@ body {
 .nav_text span a {
 	color: transparent;
 	text-decoration: none;
-    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+	transition-delay: 0.25s;
+    -webkit-transition: color 0.5s;
 	transition-delay: 0.25s;
 }
 .nav_text span a.clicked {
@@ -114,6 +119,7 @@ body {
 .nav_text span a:before {
 	content: '#';
 	color:#fff;
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
 }
 .nav_text span a:hover:before {
@@ -129,13 +135,17 @@ body {
 .nav_select_bar1 {
 	margin-top:0px;
 	margin-left:0px;
+	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
+    -webkit-transition: margin 0.5s, transform 0.5s;
     transition: margin 0.5s, transform 0.5s;
 }
 .nav_select_bar2 {
 	margin-top:4px;
 	margin-left:12px;
+	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
+    -webkit-transition: margin 0.5s, transform 0.5s;
     transition: margin 0.5s, transform 0.5s;
 }
 
@@ -149,17 +159,17 @@ body {
 
 /* nav 變成 X */
 .nav_select.clicked .nav_select_bar1 {
+	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	margin-top:0px;
 	margin-left:0px;
 }
 .nav_select.clicked .nav_select_bar2 {
+	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	margin-top:-7px;
 	margin-left:0px;
 }
-
-
 ul {
 	list-style-type : none;
 }
@@ -189,6 +199,7 @@ h3:hover {
 	color: #ff0;
 	font-family: khula;
 	font-size: 6vw;
+	-webkit-transition: background-color .5s;
 	transition: background-color .5s;
 }
 .circle_right {
@@ -222,12 +233,14 @@ h3:hover {
 	height:28vw;
 	background: #fa918c;
 	border:2px solid #fa918c;
+	-webkit-transform: skewX(-12deg);
 	transform: skewX(-12deg);
 }
 .s2 {
 	margin-left:9%;
 	background: transparent;
 	color: transparent;
+	-webkit-transition: color .5s;
 	transition: color .5s;
 }
 .s2 div {
@@ -276,6 +289,7 @@ h3:hover {
 	background:none;
 	font-family:khula;
 	font-size: 10vw;
+	-webkit-transition: border 0.5s;
 	transition: border 0.5s;
 }
 .triangle div{
@@ -284,6 +298,7 @@ h3:hover {
 	top:22%;
 	right: 28%;
 	color: transparent;
+	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
 }
 .triangle:hover.triangle div{
@@ -320,11 +335,11 @@ h3:hover {
 .line{
 	position:absolute;
 	width:100%;
-	height:100vh;
+	height:130vh;
 	top:510%;
 }
 .line div{
-	height:100vh;
+	height:130vh;
 	margin: 30vh 0vh 30vh 0vh;
 	margin-left:50%;
 	border-left: 2px solid #fA918C ;
@@ -350,13 +365,13 @@ h3:hover {
 	padding:4vw 5vw 3vw 5vw;
 	color: #555;
 }
-
 .explore {
 	position:absolute;
 	width:100%;
 	height:100vh;
 	top:800%;
 	background: transparent;
+	-webkit-transition: background 0.5s;
 	transition: background 0.5s;
 }
 .explore div {
@@ -369,6 +384,7 @@ h3:hover {
 	letter-spacing:0.5vw;
 }
 .explore div span {
+	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
 	color:#555;
 }
@@ -384,6 +400,7 @@ h3:hover {
 	margin-top:-3vw;
 	width:0%;
 	border-bottom: 0.5vw solid #fA918C ;
+	-webkit-transition: width .5s ease-in-out, margin .5s ease-in-out;
 	transition: width .5s ease-in-out, margin .5s ease-in-out;
 }
 .explore div span:hover:after {
@@ -394,9 +411,6 @@ h3:hover {
 	cursor: pointer;
 	color:#fA918C;
 }
-
-
-/* 分頁 */
 
 /* tab contents */
 .tab_content {
@@ -472,6 +486,7 @@ h3:hover {
 	font-family: khula;
 	font-size: 4vw;
 	cursor: pointer;
+	-webkit-transition: color .5s;
 	transition: color .5s;
 }
 .totop:hover {
